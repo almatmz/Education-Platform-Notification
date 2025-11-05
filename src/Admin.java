@@ -1,7 +1,7 @@
 public class Admin implements Observer {
     private final String name;
 
-    public Admin(String adminId, String name) {
+    public Admin( String name) {
         this.name = name;
     }
 

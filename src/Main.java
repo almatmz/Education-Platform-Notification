@@ -5,7 +5,7 @@ public class Main {
 
         Student almat = new Student("s001", "Almat Muzdybay");
         Student era = new Student("s002", "Erasyl Umirbay");
-        Admin admin = new Admin("a001", "Cristiano Ronaldo");
+        Admin admin = new Admin( "Cristiano Ronaldo");
 
         javaCourse.register(almat);
         javaCourse.register(era);

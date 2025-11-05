@@ -1,11 +1,11 @@
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 public class Course implements Subject {
     private final String courseId;
     private final String courseName;
-    private final List<Observer> observers = new CopyOnWriteArrayList<>();
-    private final List<String> lessons = new CopyOnWriteArrayList<>();
+    private final List<Observer> observers = new ArrayList<>();
 
 
     public Course(String courseId, String courseName) {
@@ -43,7 +43,6 @@ public class Course implements Subject {
     }
 
     public void addLesson(String lessonTitle) {
-        lessons.add(lessonTitle);
         Notification notification = new Notification(
                 "New lesson added to " + courseName,
                 "Lesson: " + lessonTitle
